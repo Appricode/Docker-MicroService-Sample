@@ -13,3 +13,8 @@ The aim of the project to show; how the **docker file** and **docker-compose** f
     
   ## How to stop 
     docker-compose down --rmi all
+
+  ## How to test
+    The main API runs on 4001 and can call other microservices
+    curl --location --request GET 'https://localhost:4001/Resolver/1' => Returns  MicroService-1
+    curl --location --request GET 'https://localhost:4001/Resolver/2' => Returns  MicroService-2
